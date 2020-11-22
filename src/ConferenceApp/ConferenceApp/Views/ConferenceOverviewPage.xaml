@@ -8,6 +8,8 @@
         GroupDisplayBinding="{Binding MonthName}"
         ItemsSource="{Binding Conferences}"
         SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+        IsPullToRefreshEnabled="True"
+        Refreshing="OnRefreshing"
         >
         <ListView.Header>
             <StackLayout Background="Gray">

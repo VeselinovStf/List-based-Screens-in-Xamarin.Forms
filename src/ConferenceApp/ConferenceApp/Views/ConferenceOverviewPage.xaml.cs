@@ -1,5 +1,7 @@
 ﻿using ConferenceApp.Utility;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,6 +20,11 @@ namespace ConferenceApp.Views
         public void AddToFavoriteMessage(object sender, EventArgs e)
         {
             DisplayAlert("Added To Facorite", "Conference is added to your favorites", "Ok");
+        }
+
+        private void OnRefreshing(object sender, EventArgs e)
+        {
+            //Run Command in ViewModel or something else ->dont forget to EndRefresh();
         }
     }
 }
