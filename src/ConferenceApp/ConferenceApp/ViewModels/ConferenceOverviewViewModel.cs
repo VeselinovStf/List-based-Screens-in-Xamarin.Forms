@@ -8,7 +8,9 @@ namespace ConferenceApp.ViewModels
 
         public ConferenceOverviewViewModel(IConferenceService conferenceService)
         {
+            Title = "Conference Overview";
             _conferenceService = conferenceService;
+
         }
 
         public void Initialize()
