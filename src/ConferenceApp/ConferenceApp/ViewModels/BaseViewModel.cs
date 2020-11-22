@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using ConferenceApp.Utility;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Xamarin.Forms;
 
 namespace ConferenceApp.ViewModels
 {

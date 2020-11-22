@@ -30,7 +30,7 @@ namespace ConferenceApp.ViewModels
 
             Initialize();
         }
-
+     
         private void OnSelectedItem(Conference conference)
         {
             _navigationService.NavigateTo(ViewModelNames.ConferenceDetailView, conference);
