@@ -8,6 +8,9 @@ namespace ConferenceApp.Utility
             = new ConferenceOverviewViewModel(App.ConferenceService, App.NavigationService);
 
         public static ConferenceDetailViewModel ConferenceDetailViewModel
-            = new ConferenceDetailViewModel();
+            = new ConferenceDetailViewModel(App.NavigationService);
+
+        public static SpeakersOverviewViewModel SpeakersOverviewViewModel
+                = new SpeakersOverviewViewModel(App.SpeakerService, App.NavigationService);
     }
 }

@@ -9,6 +9,7 @@ namespace ConferenceApp.Models
         {
             Speakers = new List<Speaker>();
         }
+
         public string Name { get; set; }
 
         public DateTime Date { get; set; }

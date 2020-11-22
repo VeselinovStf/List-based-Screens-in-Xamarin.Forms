@@ -1,4 +1,5 @@
-﻿using ConferenceApp.Models;
+﻿using ConferenceApp.Data;
+using ConferenceApp.Models;
 using System.Collections.Generic;
 
 namespace ConferenceApp.Services
@@ -7,7 +8,7 @@ namespace ConferenceApp.Services
     {
         public IList<Conference> GetAll()
         {
-            return MockDbContext.GetAllData();
+            return MockDbContext.GetAllConferences();
         }
 
     }

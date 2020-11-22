@@ -11,6 +11,9 @@ namespace ConferenceApp
         public static ConferenceService ConferenceService
             = new ConferenceService();
 
+        public static SpeakerService SpeakerService
+            = new SpeakerService();
+
         public static NavigationService NavigationService =
              new NavigationService();
 
@@ -20,6 +23,7 @@ namespace ConferenceApp
 
             NavigationService.Configure(ViewModelNames.ConferenceDetailView, typeof(ConferenceDetailPage));
             NavigationService.Configure(ViewModelNames.ConferenceOverviewView, typeof(ConferenceOverviewPage));
+            NavigationService.Configure(ViewModelNames.SpeakersOverviewPageView, typeof(SpeakersOverviewPage));
 
             MainPage = new NavigationPage(new ConferenceOverviewPage());
         }

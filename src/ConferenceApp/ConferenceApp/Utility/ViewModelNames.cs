@@ -8,5 +8,6 @@ namespace ConferenceApp.Utility
     {
         public const string ConferenceDetailView = "ConferenceDetailPage";
         public const string ConferenceOverviewView = "ConferenceOverviewPage";
+        public const string SpeakersOverviewPageView = "SpeakersOverviewPage";
     }
 }
