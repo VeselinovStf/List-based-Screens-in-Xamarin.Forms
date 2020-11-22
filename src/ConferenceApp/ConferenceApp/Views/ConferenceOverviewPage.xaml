@@ -3,5 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConferenceApp.Views.ConferenceOverviewPage"
              Title="{Binding Title}">
-    <ListView ItemsSource="{Binding Conferences}"/>
+    <ListView ItemsSource="{Binding Conferences}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}" Detail="{Binding Location}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
