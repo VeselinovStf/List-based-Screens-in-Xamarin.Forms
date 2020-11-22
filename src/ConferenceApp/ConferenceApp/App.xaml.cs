@@ -1,10 +1,14 @@
-﻿using ConferenceApp.Views;
+﻿using ConferenceApp.Services;
+using ConferenceApp.Views;
 using Xamarin.Forms;
 
 namespace ConferenceApp
 {
     public partial class App : Application
     {
+        public static ConferenceService ConferenceService
+            = new ConferenceService();
+
         public App()
         {
             InitializeComponent();

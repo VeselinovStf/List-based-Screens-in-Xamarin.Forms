@@ -1,10 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ConferenceApp.Services;
 
 namespace ConferenceApp.ViewModels
 {
-    class ConferenceOverviewViewModel
+    public class ConferenceOverviewViewModel : BaseViewModel
     {
+        private readonly IConferenceService _conferenceService;
+
+        public ConferenceOverviewViewModel(IConferenceService conferenceService)
+        {
+            _conferenceService = conferenceService;
+        }
+
+        public void Initialize()
+        {
+
+        }
+
+       
+
     }
 }

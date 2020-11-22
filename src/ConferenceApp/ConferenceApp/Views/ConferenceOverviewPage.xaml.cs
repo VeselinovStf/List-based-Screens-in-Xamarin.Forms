@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using ConferenceApp.Utility;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace ConferenceApp.Views
@@ -9,6 +10,8 @@ namespace ConferenceApp.Views
         public ConferenceOverviewPage()
         {
             InitializeComponent();
+
+            BindingContext = ViewModelLocator.ConferenceOverviewViewModel;
         }
     }
 }
