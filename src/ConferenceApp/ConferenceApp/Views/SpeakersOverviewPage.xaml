@@ -4,10 +4,22 @@
              x:Class="ConferenceApp.Views.SpeakersOverviewPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <CollectionView ItemsSource="{Binding Speakers}">
+        <CollectionView ItemsSource="{Binding Speakers}" EmptyView="No elements">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="2"/>
+            </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding FirstName}"/>
+                    <Frame BorderColor="Black" CornerRadius="10" HasShadow="False">
+                        <StackLayout Orientation="Vertical" Spacing="0">
+                            <Image  Source="{Binding Image}" WidthRequest="50" HeightRequest="50"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding FirstName}" FontSize="Large" FontAttributes="Bold" TextColor="Black"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Frame>
+                   
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

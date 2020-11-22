@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceApp.UWP", "src\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceApp.Android", "src\ConferenceApp\ConferenceApp.Android\ConferenceApp.Android.csproj", "{7940D002-74C0-466C-8A96-EAD19DDA5187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceApp", "src\ConferenceApp\ConferenceApp\ConferenceApp.csproj", "{36DE8D23-3B97-4AE5-BD8D-52C426096B76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConferenceApp", "src\ConferenceApp\ConferenceApp\ConferenceApp.csproj", "{36DE8D23-3B97-4AE5-BD8D-52C426096B76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CAFCFBD4-254A-479B-A67D-6DE5D75C075F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,9 +90,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FCC1B773-ACC4-4F01-B588-64016D52D858} = {32FBFEC8-F767-4B64-9C35-E46F4CF79C1A}
-		{7940D002-74C0-466C-8A96-EAD19DDA5187} = {32FBFEC8-F767-4B64-9C35-E46F4CF79C1A}
+		{FCC1B773-ACC4-4F01-B588-64016D52D858} = {CAFCFBD4-254A-479B-A67D-6DE5D75C075F}
+		{7940D002-74C0-466C-8A96-EAD19DDA5187} = {CAFCFBD4-254A-479B-A67D-6DE5D75C075F}
 		{36DE8D23-3B97-4AE5-BD8D-52C426096B76} = {32FBFEC8-F767-4B64-9C35-E46F4CF79C1A}
+		{CAFCFBD4-254A-479B-A67D-6DE5D75C075F} = {32FBFEC8-F767-4B64-9C35-E46F4CF79C1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC21EB2E-03DE-405C-8CC8-C15905585D42}

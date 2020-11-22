@@ -37,8 +37,8 @@ namespace ConferenceApp.Data
 
             for (int i = 0; i < 25; i++)
             {
-                speakers.Add(new Speaker() { FirstName = "First Name" + i, LastName = "Last Name" + i });
-            }
+                speakers.Add(new Speaker() { FirstName = "First Name" + i, LastName = "Last Name" + i, Image = "placeholder.png" });
+                }
 
             return speakers;
         }
