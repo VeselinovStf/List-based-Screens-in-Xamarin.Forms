@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConferenceApp.Views.ConferenceDetailPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+           
+                <Label Grid.Column="0" Text="Name: "/>
+            <Label Grid.Column="1" Text="{Binding SelectedConference.Name}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Date: "/>
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding SelectedConference.Date}"/>
+            <Label Grid.Row="2" Grid.Column="0" Text="Location: "/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding SelectedConference.Location}"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="TicketCost: "/>
+            <Label Grid.Row="3"  Grid.Column="1" Text="{Binding SelectedConference.TicketCost}"/>
+           
+        </Grid>
+       
+    </ContentPage.Content>
+</ContentPage>

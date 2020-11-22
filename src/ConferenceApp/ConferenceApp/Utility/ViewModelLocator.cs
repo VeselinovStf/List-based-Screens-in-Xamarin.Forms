@@ -5,6 +5,9 @@ namespace ConferenceApp.Utility
     public static class ViewModelLocator
     {
         public static ConferenceOverviewViewModel ConferenceOverviewViewModel
-            = new ConferenceOverviewViewModel(App.ConferenceService);
+            = new ConferenceOverviewViewModel(App.ConferenceService, App.NavigationService);
+
+        public static ConferenceDetailViewModel ConferenceDetailViewModel
+            = new ConferenceDetailViewModel();
     }
 }

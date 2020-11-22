@@ -2,11 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ConferenceApp.Views.ConferenceOverviewPage"
-             Title="{Binding Title}">
+             >
     <ListView 
         IsGroupingEnabled="True"
         GroupDisplayBinding="{Binding MonthName}"
-        ItemsSource="{Binding Conferences}">
+        ItemsSource="{Binding Conferences}"
+        SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+        >
+        <ListView.Header>
+            <StackLayout Background="Gray">
+                <Label 
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Text="{Binding Title}" 
+                    Padding="10" FontSize="Medium"/>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout Background="Gray">
+                <Label Padding="10" Text="{Binding FooterText}"/>
+            </StackLayout>
+        </ListView.Footer>
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Name}" Detail="{Binding Location}"/>

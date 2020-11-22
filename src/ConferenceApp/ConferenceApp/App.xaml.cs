@@ -1,4 +1,6 @@
 ﻿using ConferenceApp.Services;
+using ConferenceApp.Utility;
+using ConferenceApp.ViewModels;
 using ConferenceApp.Views;
 using Xamarin.Forms;
 
@@ -9,11 +11,17 @@ namespace ConferenceApp
         public static ConferenceService ConferenceService
             = new ConferenceService();
 
+        public static NavigationService NavigationService =
+             new NavigationService();
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new ConferenceOverviewPage();
+            NavigationService.Configure(ViewModelNames.ConferenceDetailView, typeof(ConferenceDetailPage));
+            NavigationService.Configure(ViewModelNames.ConferenceOverviewView, typeof(ConferenceOverviewPage));
+
+            MainPage = new NavigationPage(new ConferenceOverviewPage());
         }
 
         protected override void OnStart()
