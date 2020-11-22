@@ -1,6 +1,5 @@
-﻿using System;
+﻿using ConferenceApp.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ConferenceApp
 {
@@ -10,7 +9,7 @@ namespace ConferenceApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ConferenceOverviewPage();
         }
 
         protected override void OnStart()
