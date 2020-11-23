@@ -24,6 +24,7 @@ namespace ConferenceApp
             NavigationService.Configure(ViewModelNames.ConferenceDetailView, typeof(ConferenceDetailPage));
             NavigationService.Configure(ViewModelNames.ConferenceOverviewView, typeof(ConferenceOverviewPage));
             NavigationService.Configure(ViewModelNames.SpeakersOverviewPageView, typeof(SpeakersOverviewPage));
+            NavigationService.Configure(ViewModelNames.AddSpeakerPageView, typeof(AddSpeakerPage));
 
             MainPage = new NavigationPage(new ConferenceOverviewPage());
         }

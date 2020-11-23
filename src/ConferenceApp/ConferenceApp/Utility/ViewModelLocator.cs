@@ -12,5 +12,8 @@ namespace ConferenceApp.Utility
 
         public static SpeakersOverviewViewModel SpeakersOverviewViewModel
                 = new SpeakersOverviewViewModel(App.SpeakerService, App.NavigationService);
+
+        public static AddSpeakerViewModel AddSpeakerViewModel
+                = new AddSpeakerViewModel();
     }
 }

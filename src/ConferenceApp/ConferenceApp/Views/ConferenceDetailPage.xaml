@@ -15,6 +15,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
            
                 <Label Grid.Column="0" Text="Name: "/>
@@ -26,6 +27,8 @@
             <Label Grid.Row="3" Grid.Column="0" Text="TicketCost: "/>
             <Label Grid.Row="3"  Grid.Column="1" Text="{Binding SelectedConference.TicketCost}"/>
             <Button Grid.Row="4" Grid.ColumnSpan="2" Text="View Speakers" Command="{Binding ViewSpeakersCommand}"/>
+            <Button Grid.Row="5" Grid.ColumnSpan="2" Text="Add Speaker" Command="{Binding AddSpeakerCommand}"/>
+
         </Grid>
        
     </ContentPage.Content>

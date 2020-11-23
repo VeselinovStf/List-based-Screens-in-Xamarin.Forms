@@ -16,7 +16,13 @@ namespace ConferenceApp.ViewModels
             Title = "Conference Details";
 
             ViewSpeakersCommand = new Command(OnViewSpeakers);
+            AddSpeakerCommand = new Command(OnAddSpeakers);
             _navigationService = navigationService;
+        }
+
+        private void OnAddSpeakers()
+        {
+            _navigationService.NavigateTo(ViewModelNames.AddSpeakerPageView);
         }
 
         private async void OnViewSpeakers()
@@ -38,6 +44,7 @@ namespace ConferenceApp.ViewModels
         }
 
         public ICommand ViewSpeakersCommand { get; }
+        public ICommand AddSpeakerCommand { get; }
 
         public override void Initialize(object parameter)
         {
