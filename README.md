@@ -23,3 +23,7 @@ Pluralsight "Creating List-based Screens in Xamarin.Forms" course repository
 - Data Binding
 
 #### Duration: 1h 47m
+
+## Status
+
+- Completed
